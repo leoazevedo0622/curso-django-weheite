@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Welcome to the Home page!")
+    return render(request, 'GameForum/home.html')
