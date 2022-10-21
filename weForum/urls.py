@@ -19,9 +19,10 @@ from django.urls import path
 
 
 def myView(request):
-    return HttpResponse("Welcome to the main page!")
+    return HttpResponse("Welcome to the Home page!")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sobre/', myView),
+    path('', myView),
 ]
